@@ -17,13 +17,14 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/recruitment-portal.git
+   git clone https://github.com/ur username/JobSearch.git
 
 Create and activate a virtual environment:
 
 python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows
+venv\Scripts\activate    
+# Windows
 Install the required dependencies:
 
 Set up MongoDB:
