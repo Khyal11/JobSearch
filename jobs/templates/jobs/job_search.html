@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Search Results</title>
+</head>
+<body>
+    <h1>Job Search Results</h1>
+    <form method="GET">
+        <input type="text" name="keywords" placeholder="Keywords">
+        <input type="text" name="location" placeholder="Location">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if job_results %}
+        <ul>
+            {% for job in job_results %}
+                <li>{{ job.title }} - {{ job.location }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No jobs found.</p>
+    {% endif %}
+</body>
+</html>
